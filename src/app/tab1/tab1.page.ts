@@ -7,63 +7,35 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   constructor() {}
-  public form = [
+
+  public schedules = [
     {
-      val: 'Desafio UX Design',
-      isChecked: true,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
+      id: 1,
+      title: 'Corte social e Barbaterapia',
+      status: 'Pendente',
+      locale: 'Salão',
+      date: '02/10/2021',
+      time: '15H30',
+      price: '$65',
+      transp: '$5',
+      total: '$70',
+      name: 'Thomas Wilson',
+      city: 'São Paulo/SP',
+      imgUrl: 'https://randomuser.me/api/portraits/lego/4.jpg',
     },
     {
-      val: 'Sausage',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
-    },
-    {
-      val: 'Mushroom',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'secondary',
+      id: 2,
+      title: 'Corte social',
+      status: 'Pendente',
+      locale: 'Salão',
+      date: '02/10/2021',
+      time: '15H30',
+      price: '$65',
+      transp: '$5',
+      total: '$70',
+      name: 'Thomas Wilson',
+      city: 'São Paulo/SP',
+      imgUrl: 'https://randomuser.me/api/portraits/lego/1.jpg',
     },
   ];
-
-  public form2 = [
-    {
-      val: 'Desafio UX Design',
-      isChecked: true,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
-    },
-    {
-      val: 'Entrevista',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
-    },
-    {
-      val: 'Contratação',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'secondary',
-    },
-    {
-      val: 'Estudar',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'tertiary',
-    },
-    {
-      val: 'Terminar front-end',
-      isChecked: false,
-      description: 'lorem ipsum dolor sit amet',
-      color: 'success',
-    },
-  ];
-
-  public slideOpts: any = {
-    speed: 400,
-    slidesPerView: 3,
-    freeMode: true,
-  };
 }
